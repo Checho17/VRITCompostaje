@@ -53,6 +53,28 @@
 		z-index: -1;
 		top: 0;left: 0;
 	}
+
+	.ParExp_Titulo{
+		font-size: x-large;
+		font-family: 'Montserrat Alternates', sans-serif;
+		padding-top: 120px;
+		padding-left: 360px;
+		color: white;
+	}
+
+	.ParExp_Par{
+		font-size: large;
+		font-family: 'Montserrat Alternates', sans-serif;
+		padding-top: 10px;
+		padding-left: 360px;
+		color: white;
+
+	}
+
+	.contenido-mapa-U{
+		padding-top: 50px;
+	}
+
 	/*Estilos para el encabezado*/
 	.header{
 		width: 100%;
@@ -156,7 +178,7 @@
 	}
 	/*Fin de Menù lateral*/
 
-	/*conctac us*/
+	/*Contacto*/
 
 	* {
 		margin:0;
@@ -174,9 +196,6 @@
 		padding-top: 85px;
 	}
 
-	.contenido-mapa{
-		padding-left: 15px;
-	}
 
 	#img11
 	{
@@ -191,6 +210,7 @@
 	}
 	
 	.contacus {
+		padding-top: 60px;
 		max-height: 400px;
 		height: 100%;
 		max-width:400px;
