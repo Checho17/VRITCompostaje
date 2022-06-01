@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Supervisión EXP420</title>
+	<link rel="stylesheet" href="/css/main.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+</head>
+
+<body class="pcontainer">
+		<div class="header">
+			<div class="container">
+			<div class="logoMenu">
+				<div class="btn-menu">
+					<label for="btn-menu">☰</label>
+				</div>
+					<div class="logo">
+						<h1 id="logoTitle">VRIT Compostaje</h1>
+					</div>
+					<div>
+						<img class="logosalle" src="/imgs/logo-salle.png" alt="Logo Unisalle" width="120px"></img>
+					</div>
+								</div>
+			<div class="menu">
+					<a href="/index.html">Inicio</a>
+					<a href="/contacto.html">Contactenos</a>
+					<a href="/js/MainRegis.html">Iniciar Sesion</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="layout">
+			<div class="ParExp_Titulo">
+				<div class="atras">
+					<a href="/lateral/supervisionmenu.html">
+						<img src="/imgs/atras.png" alt="Atras"
+						title="Volver a seleccion del sensor">
+						</a>
+				</div>
+				<h2 id="Titlesm">Supervisión de EXP-421</h2>
+			</div>
+		<div class="tab">
+			<div class="fat">
+				<h3 class="titulo">Monitoreo en tiempo real</h3>
+				<table border="1" class="table" style="color:black">
+					<tr class="table_active">
+						<th scope="row">Fecha</th>
+						<th scope="row">Hora</th>
+						<th scope="row">Variable</th>
+						<th scope="row">Valor</th>
+					</tr>
+					<tr class="table-tr">
+						<td id="dateE"></td>
+						<td id="hourE"></td>
+						<td id="rh">Temperatura</td>
+						<td id="valorTE"></td>
+					</tr>
+					<tr class="table-tr">
+						<td id="dateOE"></td>
+						<td id="hourOE"></td>
+						<td id="rh">Oxigeno</td>
+						<td id="valorOE"></td>
+					</tr>
+					</table>
+			</div>
+
+			<div class="fat">
+				<h3 class="titulo">Información del sensor</h3>
+				<div class="container-table">
+					<table border="1px" class="table table-sm">
+						<thead class="thead">
+							<tr class="table_active">
+								<th scope="col">Tipo</th>
+								<th scope="col">Información</th>
+							</tr>
+						</thead>
+						<tbody class=" table" style="color: #fff;">
+							<tr class="table-tr">
+								<th id="rh" scope="row">Modelo</th>
+								<td id="model">
+
+								</td>
+							</tr>
+
+							<tr class="table-tr">
+								<th id="rh" scope="row">Fuente de alimentación</th>
+								<td id="storage">
+
+								</td>
+							</tr>
+							<tr class="table-tr">
+								<th id="rh" scope="row">Comunicación</th>
+								<td id="comunication">
+
+								</td>
+							</tr>
+							<tr class="table-tr">
+								<th id="rh" scope="row">Fabricante</th>
+								<td id="maker">
+
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+		</div>
+		<div class="containerChart">
+			<canvas id="myChart" ></canvas>
+		</div>
+
+	</div>
+
+
+	<!--	--------------->
+	<input type="checkbox" id="btn-menu">
+	<div class="container-menu">
+		<div class="cont-menu">
+			<nav>
+				<a href="/index.html">¿Quienes somos?</a>
+				<a href="/lateral/nuestropro.html">Nuestro Proyecto</a>
+				<a href="/lateral/supervisionmenu.html">Supervisión de Variables</a>
+
+			</nav>
+			<label for="btn-menu">✖️</label>
+		</div>
+	</div>
+	<script type="module" src="../js/exp420.js"></script>
+</body>
+
+</html>

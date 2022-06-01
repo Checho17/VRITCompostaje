@@ -1,3 +1,36 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
+
+import { GoogleAuthProvider, getAuth, signInWithPopup } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-auth.js";
+const provider = new GoogleAuthProvider();
+
+const firebaseConfig = {
+    apiKey: "AIzaSyAmjttAsxjb_e6tTpl4vAeXpFPd4dHLmCA",
+    authDomain: "cicproject-f2819.firebaseapp.com",
+    databaseURL: "https://cicproject-f2819-default-rtdb.firebaseio.com/",
+    projectId: "cicproject-f2819",
+    storageBucket: "cicproject-f2819.appspot.com",
+    messagingSenderId: "1038100639436",
+    appId: "1:1038100639436:web:5fae7987ebe8cfe236dc69",
+    measurementId: "G-WMBRT5DZ2W"
+  };
+  
+  // Inicialización firebase
+  initializeApp(firebaseConfig)
+
+const auth = getAuth();
+
+function signgoogle(){
+    signInWithPopup(auth, provider)
+    .then((result) => {
+      // This gives you a Google Access Token. You can use it to access the Google API.
+      console.log(result.user)
+       
+    }).catch((error) => {
+      console.log(error);
+    });
+}
+
+
 //Ejecutando funciones
 document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
 document.getElementById("btn__registrarse").addEventListener("click", register);

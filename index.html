@@ -1,57 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CundiMaps</title>
+	<title>VRIT Compostaje</title>
 	<link rel="stylesheet" href="css/main.css">
 </head>
+
 <body class="pcontainer">
-	<header class="header">
+
+	<div class="header">
 		<div class="container">
-		<div class="btn-menu">
-			<label for="btn-menu">☰</label>
-		</div>
-			<div class="logo">
-				<h1>CundiMaps</h1>
+			<div class="logoMenu">
+				<div class="btn-menu">
+					<label for="btn-menu">☰</label>
+				</div>
+				<div class="logo">
+					<h1 id="logoTitle">VRIT Compostaje</h1>
+				</div>
+				<div>
+					<img class="logosalle" src="/imgs/logo-salle.png" alt="Logo Unisalle" width="120px"></img>
+				</div>
 			</div>
-			<nav class="menu">
-				<a href="../Proyecto/index.html">Inicio</a>
-				<a href="registro.html">Registro</a>
-				<a href="contacto.html">Contactenos</a>
-			</nav>
-		</div>
-	</header>
-	<div class="capa">
-		<div class="ParExp_Titulo">
-			Bienvenido			
-		</div>
-		<div class="ParExp_Par">
-			Somos estudiantes de la Universidad Militar Nueva Granada<br>
-			Nuestro objetivo es brindar a los usuarios puntos turísticos a lugares dentro de la localidad de cundinamarca<br>
-			En el icono de la parte superior izquierda, podrá ver los diferentes destinos que tenemos para usted<br>
-
-			<div class="contenido-mapa-U">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5015.309990164428!2d-74.01503968467446!3d4.94254994088784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e40774d022b68e5%3A0xd949e2116a32d8b!2sUniversidad%20Militar%20Nueva%20Granada!5e1!3m2!1ses!2sco!4v1637991550301!5m2!1ses!2sco" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy">
-				</iframe>
+			<div class="menu">
+				<a href="/index.html">Inicio</a>
+				<a href="/contacto.html">Contactenos</a>
+				<a href="/js/MainRegis.html">Iniciar Sesion</a>
 			</div>
-
 		</div>
 	</div>
-<!--	--------------->
-<input type="checkbox" id="btn-menu">
-<div class="container-menu">
-	<div class="cont-menu">
-		<nav>
-			<a href="lateral/ruta1.html">La Burger House</a>
-			<a href="lateral/ruta2.html">Parque Jaime Duque</a>
-			<a href="lateral/ruta3.html">Hotel Isla Verde</a>
-			<a href="lateral/ruta4.html">La Granja Tacuara</a>
-			<a href="lateral/ruta5.html">Chocolate Sweet</a>
-			<a href="lateral/ruta6.html">El Galápago Campestre</a>
-		</nav>
-		<label for="btn-menu">✖️</label>
+
+<div class="layout">
+	<div class="ParExp_Titulo">
+		<h1 id="Titl">Bienvenido</h1>
+		
+		<h2 style="margin-left: 40px;">¿Quienes somos?</h2>
+	</div>
+
+	<div class="ParExp_Par">
+		<p id="proyecto">Somos un grupo de investigación de la Universidad de La Salle el cual lo componen estudiantes de diferentes
+		carreras,
+		como lo son Ingenieria Quimica, Ingenieria en Automatización e Ingenieria Ambiental.</p>
+		<div id=img_capa>
+			<img id="img_cen" src="/imgs/VRIT.jpg" alt="Imagen VRIT"></img>
+		</div>
 	</div>
 </div>
+
+	<!--	--------------->
+	<input type="checkbox" id="btn-menu">
+	<div class="container-menu">
+		<div class="cont-menu">
+			<nav>
+				<a href="/index.html">¿Quienes somos?</a>
+				<a href="/lateral/nuestropro.html">Nuestro Proyecto</a>
+				<a href="/lateral/supervisionmenu.html">Supervisión de Variables</a>
+
+			</nav>
+			<label for="btn-menu">✖️</label>
+		</div>
+	</div>
+
 </body>
+
 </html>
